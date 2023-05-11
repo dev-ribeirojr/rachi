@@ -1,0 +1,64 @@
+.container-contato{
+    width: 100%;
+    padding: 30px 20px;
+    background-image: url(../../assets/background-contact.png);
+    background-position: center center;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+.container-contato h1,
+.container-contato p
+{
+    color: #FFF;
+    max-width: 500px;
+    width: 100%;
+}
+.container-contato form {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-contato form input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #FFF;
+    font-size: 18px;
+    max-width: 300px;
+    width: 100%;
+    margin: 20px 0;
+    color: #FFF;
+    font-family: var(--font-inter);
+    padding-bottom: 8px;
+    outline: none;
+}
+.container-contato form input::placeholder{
+    color: #FFF;
+}
+
+.container-contato form button {
+    border: none;
+    font-size: 18px;
+    width: 150px;
+    padding: 8px;
+    border-radius: 50px;
+    color: #FFF;
+    background-color: var(--cor04);
+    box-shadow: 2px 4px 6px rgba(29, 161, 255, 0.486);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.container-contato form button:hover{
+    background-color: rgb(16, 124, 201);
+}
+@media  screen and (min-width: 768px) {
+    .container-contato form {
+        flex-direction: row;
+    }
+}

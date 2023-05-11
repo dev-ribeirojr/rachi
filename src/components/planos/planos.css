@@ -1,0 +1,77 @@
+.container-planos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.container-planos h1{
+    margin-bottom: 20px;
+}
+.container-planos p{
+    max-width: 500px;
+    width: 100%;
+}
+.planos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 40px 0;
+    gap: 20px;
+}
+
+.planos article {
+    height: 350px;
+    max-width: 280px;
+
+    width: 100%;
+    text-align: center;
+    background-color: var(--cor03);
+    border-radius: 5px;
+    padding: 8px;
+
+    box-shadow: 2px 4px 6px #00000036;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.planos article h2 {
+    margin-bottom: 20px;
+}
+
+.planos article strong {
+    font-size: 20px;
+    font-family: var(--font-inter);
+}
+.planos article strong span{
+    font-size: 28px;
+}
+
+.planos article button {
+    border: none;
+    font-size: 18px;
+    width: 150px;
+    padding: 8px;
+    border-radius: 50px;
+    color: #FFF;
+    background-color: var(--cor04);
+    box-shadow: 2px 4px 6px rgba(29, 161, 255, 0.486);
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-top: 30px;
+}
+.planos article button:hover{
+    background-color: rgb(16, 124, 201);
+}
+@media screen and (min-width: 768px) {
+    .planos{
+        flex-direction: row;
+    }   
+}
